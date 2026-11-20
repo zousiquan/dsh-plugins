@@ -1,0 +1,13 @@
+- insert:
+    - id: translator
+      name: '@deepseek-ai/dsh-experimental-translator'
+      config:
+        provider: bing
+    - id: ocr-translate
+      name: 'dsh-ocr-translate'
+      config:
+        languages: chi_sim+eng
+        translationProvider: bing
+        defaultTargetLanguage: zh-Hans
+        maxImageBytes: 20971520
+        timeoutMs: 60000

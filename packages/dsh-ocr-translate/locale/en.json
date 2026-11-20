@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "OCR translate",
+    "description": "Adds an 'OCR translate' entry to the left sidebar that opens a panel for extracting text from images and translating it. Upload, drag, or paste an image, click 'Extract text' to run local Tesseract OCR (Chinese + English by default), edit the result, choose a target language, and click 'Translate'. Translation uses the built-in translator's anonymous Bing endpoint, so it needs no API key but does require network access. OCR runs offline through a local Tesseract binary; install Tesseract (with the chi_sim language data) or set tesseractPath in the plugin config if it is not found. Turning the plugin off removes the sidebar entry and panel; no session data is stored."
+  }
+}

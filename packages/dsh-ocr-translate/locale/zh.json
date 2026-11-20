@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "OCR 翻译",
+    "description": "在左侧栏新增「OCR 翻译」入口，打开一个用于图片文字提取与翻译的面板。上传、拖拽或粘贴图片，点击「提取文字」调用本地 Tesseract OCR（默认中文+英文），可编辑识别结果，选择目标语言后点击「翻译」。翻译复用内置 translator 的 Bing 匿名端点，无需 API 密钥，但需要联网。OCR 通过本地 Tesseract 二进制离线运行；若未找到，请安装 Tesseract（含 chi_sim 语言数据）或在插件配置中设置 tesseractPath。关闭插件会移除侧栏入口与面板，不存储任何会话数据。"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "dsh-ocr-translate",
+  "version": "1.0.0",
+  "description": "Extract text from images with Tesseract OCR and translate it through the built-in translator, from a left-sidebar panel.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": ["dsh", "dsh-plugin", "ocr", "tesseract", "translation", "sidebar"],
+  "author": "zousiquan",
+  "homepage": "https://github.com/zousiquan/dsh-plugins/tree/main/packages/dsh-ocr-translate#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zousiquan/dsh-plugins.git",
+    "directory": "packages/dsh-ocr-translate"
+  },
+  "engines": { "dsh": ">=0.2.2-rc.5" },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}
