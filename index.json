@@ -30,6 +30,31 @@
           "engines": { "dsh": ">=0.2.2-rc.5" }
         }
       ]
+    },
+    {
+      "name": "dsh-personal-memory",
+      "title": { "en": "Personal memory", "zh": "个人记忆" },
+      "description": {
+        "en": "Durable personal memory for the agent: saves preferences and facts you ask it to remember, searches and forgets them on request, and automatically recalls recent memories at the start of each new session (bounded and configurable). Requires DSH >=0.2.2-rc.5 with the default storage plugins. Substring search only; no semantic retrieval, auto-capture, or management UI in this version.",
+        "zh": "让智能体拥有持久的个人记忆：记住你要求保存的偏好与事实，随时搜索、按请求遗忘，并在每个新会话开始时自动召回近期记忆（有界、可配置）。需 DSH >=0.2.2-rc.5 及默认存储插件。本版本仅支持子串搜索，无语义检索、自动捕获或管理界面。"
+      },
+      "icon": "icons/dsh-personal-memory.svg",
+      "author": "zousiquan",
+      "homepage": "https://github.com/zousiquan/dsh-plugins/tree/main/packages/dsh-personal-memory#readme",
+      "repository": { "url": "https://github.com/zousiquan/dsh-plugins", "directory": "packages/dsh-personal-memory" },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1795161440,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/zousiquan/dsh-plugins.git",
+            "commit": "9082ea42e503ea3b5381622c244f7a1a8bc2249c",
+            "path": "packages/dsh-personal-memory"
+          },
+          "engines": { "dsh": ">=0.2.2-rc.5" }
+        }
+      ]
     }
   ]
 }
