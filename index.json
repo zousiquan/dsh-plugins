@@ -1,0 +1,35 @@
+{
+  "format": 1,
+  "title": { "en": "zousiquan's DSH plugins", "zh": "zousiquan 的 DSH 插件" },
+  "description": {
+    "en": "DeepSeek Harness plugins by zousiquan, published from the dsh-plugins monorepo.",
+    "zh": "zousiquan 的 DeepSeek Harness 插件，源自 dsh-plugins  monorepo。"
+  },
+  "plugins": [
+    {
+      "name": "dsh-ocr-translate",
+      "title": { "en": "OCR translate", "zh": "OCR 翻译" },
+      "description": {
+        "en": "Left-sidebar panel that extracts text from images with local Tesseract OCR (Chinese + English) and translates it via the built-in translator (anonymous Bing, no API key). Requires a local Tesseract binary with chi_sim language data; see the README for setup.",
+        "zh": "左侧栏面板：用本地 Tesseract OCR 提取图片文字（中文+英文），并通过内置 translator（Bing 匿名端点，无需密钥）翻译。需本机安装 Tesseract 及 chi_sim 语言数据，安装方法见 README。"
+      },
+      "icon": "icons/dsh-ocr-translate.svg",
+      "author": "zousiquan",
+      "homepage": "https://github.com/zousiquan/dsh-plugins/tree/main/packages/dsh-ocr-translate#readme",
+      "repository": { "url": "https://github.com/zousiquan/dsh-plugins", "directory": "packages/dsh-ocr-translate" },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1795146066,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/zousiquan/dsh-plugins.git",
+            "commit": "32135da2b26f15b5b8b84c3de13f88d1b52da6c6",
+            "path": "packages/dsh-ocr-translate"
+          },
+          "engines": { "dsh": ">=0.2.2-rc.5" }
+        }
+      ]
+    }
+  ]
+}
