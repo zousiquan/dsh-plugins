@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Personal memory",
+    "description": "Gives the agent durable personal memory: it saves preferences and facts you ask it to remember, searches them later, forgets them on request, and automatically recalls recent memories at the start of each new session. Recall size is configurable. Substring search only; no semantic retrieval, auto-capture, or management UI in this version."
+  }
+}

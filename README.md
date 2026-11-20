@@ -9,6 +9,7 @@ plugins by [@zousiquan](https://github.com/zousiquan). Each plugin lives in
 | Package | Description |
 |---|---|
 | [`dsh-ocr-translate`](packages/dsh-ocr-translate) | Left-sidebar panel: extract text from images with Tesseract OCR and translate it via the built-in translator. |
+| [`dsh-personal-memory`](packages/dsh-personal-memory) | Minimal personal memory loop: schema-validated storage domain, memory_write/memory_search/memory_forget tools, and bounded automatic recall at session start. |
 
 ## Installing
 

@@ -1,0 +1,7 @@
+- insert:
+    - id: personal-memory
+      name: 'dsh-personal-memory'
+      config:
+        autoRecall: true
+        recallMaxItems: 20
+        recallMaxBytes: 8192

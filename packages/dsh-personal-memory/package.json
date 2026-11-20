@@ -1,0 +1,39 @@
+{
+  "name": "dsh-personal-memory",
+  "version": "1.0.0",
+  "description": "Minimal personal memory loop: a schema-validated storage domain, memory_write/memory_search/memory_forget tools, and bounded automatic recall at session start.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": ["dsh", "dsh-plugin", "memory", "personal-memory", "storage"],
+  "author": "zousiquan",
+  "homepage": "https://github.com/zousiquan/dsh-plugins/tree/main/packages/dsh-personal-memory#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zousiquan/dsh-plugins.git",
+    "directory": "packages/dsh-personal-memory"
+  },
+  "engines": { "dsh": ">=0.2.2-rc.5" },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@deepseek-ai/dsh-storage-domain": "0.2.2-rc.5",
+    "@deepseek-ai/dsh-tools": "0.2.2-rc.5",
+    "@deepseek-ai/schemastery": "~3.19.0",
+    "zod": "4.6.6"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}
